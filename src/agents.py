@@ -44,7 +44,7 @@ def researcher_agent(state: InterviewState):
     print(f"Digging up latest industry trends for {state['target_role']}...")
     
     try:
-        # Basic search is usually fast enough for this use case
+        
         response = tavily_client.search(query, search_depth="basic", max_results=3)
         context = "\n\n".join([res["content"] for res in response.get("results", [])])
     except Exception as e:
