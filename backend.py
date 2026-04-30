@@ -11,7 +11,7 @@ from src.graph import app_graph
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="AI Interview Coach API")
+app = FastAPI(title="Ye Hai Mera Backend")
 
 # In-memory store 
 sessions = {}
