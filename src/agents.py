@@ -9,7 +9,6 @@ from src.state import InterviewState, EvaluationModel
 
 load_dotenv()
 
-# Initialize our clients globally so they are reused across function calls
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
 evaluator_llm = llm.with_structured_output(EvaluationModel)
 
